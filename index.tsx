@@ -1,5 +1,5 @@
-import React from "react";
-import { render } from "react-dom";
-import { App } from "./App";
+import { redirect } from 'next/navigation'
 
-render(<App />, document.getElementById("root"));
+export default function Home() {
+  redirect('/auth/login')
+}
